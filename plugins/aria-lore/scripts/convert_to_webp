@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# convert_to_webp — Convert a PNG file to WebP format.
+#
+# Usage:
+#   convert_to_webp <input_file> <output_file>
+#
+# Requires: cwebp (from libwebp) on PATH
+
+set -euo pipefail
+
+IN_FILE="$1"
+OUT_FILE="$2"
+
+if ! command -v cwebp &>/dev/null; then
+  echo "Error: cwebp not found. Install libwebp (e.g., apt install webp, brew install webp)." >&2
+  exit 1
+fi
+
+if [[ "${DEBUG:-0}" == "1" ]]; then
+  cwebp -preset drawing "$IN_FILE" -o "$OUT_FILE"
+else
+  cwebp -preset drawing "$IN_FILE" -o "$OUT_FILE" > /dev/null 2>&1
+fi

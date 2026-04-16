@@ -1,0 +1,8 @@
+{
+  "name": "aria-lore",
+  "description": "Image generation and lore production tools for Aria, a video game set in an original fantasy world. Helps scaffold NPCs, items, locations, and visual style guides for game development.",
+  "version": "1.0.0",
+  "author": {
+    "name": "cdata"
+  }
+}
