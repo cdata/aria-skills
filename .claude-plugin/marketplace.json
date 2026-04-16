@@ -1,0 +1,31 @@
+{
+  "name": "aria-skills",
+  "owner": {
+    "name": "cdata"
+  },
+  "metadata": {
+    "description": "Shared skills marketplace for the Aria project",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "unity",
+      "source": "./plugins/unity-claude-skills",
+      "description": "Comprehensive Unity 6 game engine development skills. 35 skills covering scripting, physics, graphics, animation, UI, audio, 2D, ECS/DOTS, Cinemachine, performance profiling, multiplayer, XR, editor tools, and more. Based on Unity 6.3 LTS official documentation.",
+      "version": "1.4.0",
+      "author": {
+        "name": "Nice Wolf Studio"
+      },
+      "repository": "https://github.com/Nice-Wolf-Studio/unity-claude-skills",
+      "license": "MIT",
+      "category": "development",
+      "tags": [
+        "unity",
+        "game-dev",
+        "c-sharp",
+        "unity6"
+      ]
+    }
+  ]
+}

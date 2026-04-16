@@ -1,0 +1,3 @@
+[submodule "plugins/unity-claude-skills"]
+	path = plugins/unity-claude-skills
+	url = https://github.com/Nice-Wolf-Studio/unity-claude-skills
